@@ -147,3 +147,8 @@ You will be prompted for username, email, password, and password confirmation.
 Once you've done that, 'runserver' again and hit the 'Log In' button in the top right corner of localhost:8000. 
 
 Log in with your newly created superuser's credentials and play with your very own API and its slick web interface!
+
+### To do:
+
+- Add in the ability to update (using PUT as your verb) and delete (using DELETE)
+- Build out your own model and incorporate that
