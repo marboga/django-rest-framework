@@ -148,4 +148,9 @@ Once you've done that, 'runserver' again and hit the 'Log In' button in the top 
 
 Log in with your newly created superuser's credentials and play with your very own API and its slick web interface!
 
-Once you've played around with it, add in two more classes of your choice, with whatever relationships you want, and get that all working. You can now leverage the power of Django Rest Framework for your own projects!
+### Next Steps:
+
+- Add in the ability to update (using PUT as your verb) and delete (using DELETE)
+- Add in two more classes of your choice, with whatever relationships you want, and get that all working.
+
+Congratulations! You can now leverage the power of Django Rest Framework for your own projects!
