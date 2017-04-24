@@ -1,4 +1,4 @@
-"""djangoREST URL Configuration
+"""rest2 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.10/topics/http/urls/
@@ -15,9 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from rest_framework import routers
+from apps.root_app import views
+
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
-	url(r'^api/', include('rest_framework.urls', namespace='rest_framework')),
-	url(r'^admin/', admin.site.urls),
-    url(r'^', include('apps.root_app.urls', namespace='root_app')),
+    url(r'^admin/', admin.site.urls),
+	# url(r'^api/', include('rest_framework.urls', namespace='rest_framework')),
+	url(r'^', include(router.urls)),
 ]

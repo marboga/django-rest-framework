@@ -25,7 +25,7 @@ build RESTful APIs!
 
  - someplace like ~/Code/Python/Django
 
- First off, in our terminal and with our virtual environment active, we will `pip install djangorestframework`. I'm assuming that at minimum t
+ First off, in our terminal and with our Django virtual environment active, we will `pip install djangorestframework`.
 
 
 - Next we start a new Django project:
@@ -144,6 +144,8 @@ Thankfully, that's only one more terminal command.
 `python manage.py createsuperuser`
 You will be prompted for username, email, password, and password confirmation.
 
-Once you've done that, 'runserver' again and hit the 'Log In' button in the top right corner of localhost:8000. 
+Once you've done that, 'runserver' again and hit the 'Log In' button in the top right corner of localhost:8000.
 
 Log in with your newly created superuser's credentials and play with your very own API and its slick web interface!
+
+Once you've played around with it, add in two more classes of your choice, with whatever relationships you want, and get that all working. You can now leverage the power of Django Rest Framework for your own projects!
